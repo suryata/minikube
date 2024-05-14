@@ -1,3 +1,5 @@
+## Reflection on Hello Minikube
+
 ### 1. Compare the application logs before and after you exposed it as a Service. Try to open the app several times while the proxy into the Service is running. What do you see in the logs? Does the number of logs increase each time you open the app?
 Terdapat perbedaan antara log aplikasi sebelum dan setelah Service di-expose. Setelah Service di-expose, aplikasi dapat menerima request dari luar, sehingga pada log akan tercatat request-request yang diterima. Misalnya, seperti yang terlihat pada log, ada beberapa entri untuk permintaan GET, yang merupakan hasil dari melakukan refresh atau akses berulang kali ke Service hello-node. Ini menunjukkan bahwa aplikasi secara aktif menangani permintaan masuk setelah dijadikan sebagai Service.
 ![alt text](image.png)
